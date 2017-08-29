@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+
+	<div id="wrapper">
+	<div id="introScreen">
+		<img id="introLogo" src="images/titleLogo.png">
+		<button type="button" id="playNow">Play Now</button>
+	</div>
+	<div id="instructions">
+		<h1>Instructions</h1>
+		<h3>Objective of the game:</h3> 
+		<p>Try to follow the Queen of Hearts as the cards shuffle face down to win coins!</p>
+		<ol>
+			<li>  Make a wager at the bottom of the screen</li>
+			<li>  Observe the starting position of the Queen of Hearts</li>
+			<li>  Click the "Shuffle" button</li>
+			<li>  After shuffle, flip a card to find the Queen of hearts</li>
+		</ol>
+		<button type="button" id="skip">Skip</button>
+	</div>
+	<div id="gameContainer">	
+		<div id="header">
+			<div id="levelBoard">
+				<span>Level</span>
+				<div id="speedBg">
+					<h4 id="speed">1</h4>
+				</div>
+			</div>
+			<div id="messageBoard"><h4 id="messages">Watch the <span>Queen of Hearts</span></h4></div>
+			<div id="scoreBoard">
+				<span>Coins</span>
+				<div class="hud">
+					<img id="money" src="images/coin.gif">
+					<h3 id="score">5</h3>
+				</div>
+			</div>
+		</div>
+		
+
+		<div id="mainSection">
+
+			<div id="cardTable">
+				<div class="wholeCard">
+					<div class="cardFrontWrapper" id="card1Wrapper">
+						<img class="playingCard" id="card1" src="images/jackClubs.png">
+					</div>
+					<div class="cardBackWrapper" id="back1">
+						<img class="cardBack" id="cardBack1" src="images/cardBack.png">
+					</div>
+				</div>
+				<div class="wholeCard">
+					<div class="cardFrontWrapper" id="card2Wrapper">
+						<img class="playingCard" id="card2" src="images/queenHearts.png">
+					</div>
+					<div class="cardBackWrapper" id="back2">
+						<img class="cardBack" id="cardBack2" src="images/cardBack.png">
+					</div>
+				</div>
+				<div class="wholeCard">
+					<div class="cardFrontWrapper" id="card3Wrapper">
+						<img class="playingCard" id="card3" src="images/jackSpades.png">
+					</div>
+					<div class="cardBackWrapper" id="back3">
+						<img class="cardBack" id="cardBack3" src="images/cardBack.png">
+					</div>
+				</div>
+			</div>
+
+			<div id="footer" class="transition">
+				<div id="wager">
+					<img id="wagerMoney" src="images/wagerCoins.gif">
+					<div>
+						<p>Wager</p>
+						<h4 id="wagerAmt">5</h4>
+					</div>
+					<div id="amount">
+						<button type="button" class="amountBtn" id="plus">+</button>
+						<button type="button" class="amountBtn" id="minus">-</button>
+					</div>
+				</div>
+
+				<div class="shuffle">
+					<button type="button" id="shuffleBtn">Shuffle</button>
+				</div>
+
+				<div id="startOver">
+					<button type="button" id="restartBtn">Restart</button>
+				</div>
+			</div>
+
+			<div id="startOver2">
+				<button type="button" id="restartBtn2">Restart</button>
+			</div>
+
+		</div>
+
+		<!-- <div id="infoSection">
+			<div class="infoText">
+				<h1>Instructions</h1>
+				<p>Memorize the position of the Queen of Hearts</p>
+				<p>Click "SHUFFLE" to shuffle the cards, try to follow the Queen of Hearts</p>
+				<p>Click on the card you think is the Queen of Hearts</p>
+			</div>
+		</div> -->
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

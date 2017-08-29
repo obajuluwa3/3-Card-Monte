@@ -1,0 +1,35 @@
+#card1Wrapper {
+	position: absolute;
+  	top: 126px;
+  	left: 444px;
+}
+
+#back1 {
+	position: absolute;
+  	top: 126px;
+  	left: 444px;
+}
+
+#card2Wrapper {
+	position: absolute;
+  	top: 126px;
+  	left: 649px;
+}
+
+#back2 {
+	position: absolute;
+  	top: 126px;
+  	left: 649px;
+}
+
+#card3Wrapper {
+	position: absolute;
+  	top: 126px;
+  	left: 854px;
+}
+
+#back3 {
+	position: absolute;
+  	top: 126px;
+  	left: 854px;
+}
